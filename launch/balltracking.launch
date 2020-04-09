@@ -1,0 +1,9 @@
+<launch>
+
+	<include file="$(find usb_cam)/launch/usb_cam-test.launch" >
+		<param name="video_device" value="/dev/video0" />
+	</include>
+
+  <node pkg="ball_tracking" name="ball_tracker" type="ball_tracker"/>
+
+</launch>
